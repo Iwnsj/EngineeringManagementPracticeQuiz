@@ -145,14 +145,16 @@ const finalQuestions = [
     { q: "A characteristic of controlling indicating it applies to all levels of management.", a: "Controlling is a pervasive function" },
     { q: "A characteristic of controlling indicating it looks back at the performance achieved.", a: "Controlling is a backward-looking function" },
     { q: "A characteristic of controlling indicating it seeks to improve future performance.", a: "Controlling is a forward-looking function" },
-    { q: "It refers to the activity combining technical knowledge with the ability to organize and coordinate worker power, materials, machinery, and money.", a: "Engineering management" },
-    { q: "It is a creative problem-solving process of planning, organizing, leading, and controlling an organization's resources to achieve its mission and objectives.", a: "Management" },
-    { q: "The medium through which the information is conveyed.", a: "Channel" },
-    { q: "A benefit of effective communication achieved by listening to employees' concerns and allowing them to have input.", a: "Creates commitment" },
-    { q: "It is the extended continuous service with a company or organization.", a: "Seniority" },
-    { q: "He has given a keyword 'POSDCORB' for the functions of management.", a: "Luther Gullick" },
-    { q: "A step in organizing involving giving a rank in order to the managerial positions, also called hierarchy.", a: "Classifying the authority" },
-    { q: "The screening step of staffing where suitable candidates are appointed as per the requirements.", a: "Selection" },
-    { q: "The measurement and correction of performance activities of subordinates in order to make sure that the enterprise objectives and plans are being accomplished.", a: "Controlling" },
-    { q: "A characteristic of controlling indicating it applies to all levels of management.", a: "Controlling is a pervasive function" }
+    { q: "It is a dynamic process consisting of various elements and activities common to each and every manager irrespective of his level or status.", a: "Management" },
+    { q: "These provide a rationale for undertaking various activities as well as indicate direction of efforts in planning.", a: "Objectives" },
+    { q: "For goals that cannot be specified in quantitative terms like performance, they should be specified in these terms.", a: "Qualitative terms" },
+    { q: "It is rightly said that a well ___ is half done, referring to a preparatory step in management.", a: "Plan" },
+    { q: "These planning premises are controllable by the management.", a: "Internal premises" },
+    { q: "These planning premises are non-controllable like socio-economic and political changes.", a: "External premises" },
+    { q: "It is a mental predisposition for things to happen in future and a synthesis of forecast.", a: "Plan" },
+    { q: "This organization of dividing the whole concern into independent units and departments.", a: "Departmentation" },
+    { q: "This activity of giving a rank in order to the managerial positions.", a: "Hierarchy" },
+    { q: "This function of management follows planning and helps in achievement of results.", a: "Organizing" }
 ];
+
+const allQuestions = [...prelimQuestions, ...midtermQuestions, ...finalQuestions];

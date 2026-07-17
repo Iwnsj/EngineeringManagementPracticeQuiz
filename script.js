@@ -10,10 +10,15 @@ function shuffleArray(array) {
     }
 }
 
-function initQuiz(questions) {
+function initQuiz(questions, limit = 50) {
     // Clone and shuffle the questions
     currentQuestions = [...questions];
     shuffleArray(currentQuestions);
+    
+    // Limit the number of questions
+    if (limit && currentQuestions.length > limit) {
+        currentQuestions = currentQuestions.slice(0, limit);
+    }
     
     currentQuestionIndex = 0;
     score = 0;
