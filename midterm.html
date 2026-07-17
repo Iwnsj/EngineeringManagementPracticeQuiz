@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Quiz - Engineering Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Midterm Quiz</h1>
+            <p>Communication & Seniority at Work</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div class="quiz-header">
+                <span id="progress-text" class="progress-text">Question 1 of 50</span>
+                <span id="score-text" class="score-text">Score: 0</span>
+            </div>
+            
+            <div class="question-container">
+                <h2 id="question-text" class="question-text">Question goes here...</h2>
+                <div class="input-group">
+                    <input type="text" id="answer-input" class="answer-input" placeholder="Type your answer here..." autocomplete="off">
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </div>
+            
+            <div class="actions">
+                <button id="btn-submit" class="btn btn-submit" onclick="checkAnswer()">Submit Answer</button>
+                <button id="btn-next" class="btn btn-submit" onclick="nextQuestion()" style="display: none;">Next Question</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-container">
+            <h2>Quiz Complete!</h2>
+            <div id="final-score" class="results-score">0 / 50</div>
+            <p id="result-message">Great Job!</p>
+            <br><br>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button class="btn" onclick="initQuiz(midtermQuestions)">Retake Quiz</button>
+                <a href="index.html" class="btn" style="background: rgba(255,255,255,0.1); border: 1px solid var(--surface-border);">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initQuiz(midtermQuestions);
+        });
+    </script>
+</body>
+</html>
